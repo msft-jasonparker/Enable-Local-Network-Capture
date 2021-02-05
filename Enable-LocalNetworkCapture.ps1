@@ -2,6 +2,7 @@
 Param ()
     BEGIN {
         #Requires -RunAsAdministrator
+        $VerbosePreference = "Continue"
         $TempPath = ("{0}\NetMon" -f $env:TEMP)
         $NetMonDownload = ("{0}\NM34_x64.exe" -f $TempPath)
     }
@@ -56,3 +57,4 @@ Param ()
         }
         Else { Write-Warning ("NetMonCleanUp Scheduled Task already exists") }
     }
+    END { $VerbosePreference = "SilentlyContinue" }
