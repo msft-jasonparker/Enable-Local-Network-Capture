@@ -2,7 +2,7 @@
 .SYNOPSIS
     Configures a local computer to capture network traces
 .DESCRIPTION
-    This script will download and install the (deprecated) Microsoft Network Monitor 3.4 application. Once installed, a scheduled task will be created to capture network traffic anytime a user is logged on to the computer. The captures files will rollover to a new file every 250MB. A separate task will pruned the logging directory for capture files older than 3 days. The solution files can be found in C:\Windows\Utilities and the tasks are created in Microsoft > Windows > NetTracing.
+    This script will download and install the (deprecated) Microsoft Network Monitor 3.4 application. Once installed, a scheduled task will be created to capture network traffic anytime a user is logged on to the computer. The captures files will rollover to a new file every 250MB. A separate task will pruned the logging directory for capture files older than 3 days. The solution files can be found in C:\Windows\Utilities and the tasks are created in Microsoft > Windows > NetTrace.
 .EXAMPLE
     PS C:\> Enable-LocalNetworkCapture.ps1
     Single script operation will check and validate the computer is configured for network captures.
